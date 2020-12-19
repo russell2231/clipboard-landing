@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --primary-main: hsl(171, 66%, 44%);
+  --primary-secondary: hsl(233, 100%, 69%);
+  --neutral-dark: hsl(210, 10%, 33%);
+  --neutral-light: hsl(201, 11%, 66%);
+  --font-size: 18px;
+  --font: 'Bai Jamjuree', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font);
+  font-size: var(--font-size);
+  color: var(--neutral-light);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--neutral-dark);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: var(--font-size);
+  padding: 1rem;
+  border-radius: 5rem;
+  border: none;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.ios-btn {
+  background-color: var(--primary-main);
+  color: #fff;
+  box-shadow: 2px 2px 13px var(--primary-main);
+}
+
+.mac-btn {
+  background-color: var(--primary-secondary);
+  color: #fff;
+  box-shadow: 2px 2px 13px var(--primary-secondary);
+}
+
+.main-header {
+  background: url(images/bg-header-mobile.png) no-repeat top/cover;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.keep-track {
+  text-align: center;
+}
+
+.keep-track .container {
+  padding: 3rem 0;
+}
+
+.keep-track .tools {
+  margin-top: 5rem;
+}
+
+.tools .computer-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.function {
+  margin-bottom: 3rem;
+}
+
+.access {
+  text-align: center;
+}
+
+.access .devices-img {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.workflow {
+  text-align: center;
+}
+
+.workflow .container {
+  padding-top: 0;
+}
+
+.workflow .workflow-functions {
+  margin-top: 5rem;
+}
+
+.workflow-functions .workflow-tools {
+  margin-bottom: 3rem;
+}
+
+.companies {
+  text-align: center;
+}
+
+.companies .container {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.companies img {
+  margin-bottom: 5rem;
+}
+
+.download {
+  text-align: center;
+}
+
+.download .container {
+  padding-top: 1rem;
+}
+
+.download p {
+  margin-bottom: 3rem;
+}
+
+.main-footer {
+  background-color: #eee;
+  text-align: center;
+}
+
+.main-footer .container {
+  padding: 3rem 0 1rem;
+}
+
+.main-footer .footer-nav img {
+  width: 50px;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin: 1.5rem 0;
+}
+
+.footer-nav a {
+  color: var(--neutral-dark);
+  text-decoration: none;
+}
+.footer-nav .socials {
+  width: 170px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav .socials img {
+  width: 30px;
+}
