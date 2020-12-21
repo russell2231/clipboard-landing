@@ -2,7 +2,9 @@
 
 :root {
   --primary-main: hsl(171, 66%, 44%);
+  --primary-main-hover: hsla(171, 66%, 44%, 0.7);
   --primary-secondary: hsl(233, 100%, 69%);
+  --primary-secondary-hover: hsl(233, 100%, 69%, 0.7);
   --neutral-dark: hsl(210, 10%, 33%);
   --neutral-light: hsl(201, 11%, 66%);
   --font-size: 18px;
@@ -58,6 +60,7 @@ button {
   padding: 1rem;
   border-radius: 5rem;
   border: none;
+  cursor: pointer;
 }
 
 .container {
@@ -195,4 +198,134 @@ button {
 
 .footer-nav .socials img {
   width: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--primary-secondary);
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .container {
+    width: 48%;
+  }
+
+  .ios-btn,
+  .mac-btn {
+    width: 30%;
+    margin: 1rem 0.5rem;
+  }
+
+  .ios-btn:hover {
+    background-color: var(--primary-main-hover);
+  }
+
+  .mac-btn:hover {
+    background-color: var(--primary-secondary-hover);
+  }
+
+  .main-header {
+    background: url(images/bg-header-desktop.png) no-repeat top/cover;
+  }
+
+  .keep-track .tools {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    text-align: left;
+
+    width: 110%;
+  }
+
+  .tools .computer-img {
+    max-width: 850px;
+    position: absolute;
+    left: -420px;
+  }
+
+  .tools .functions {
+    width: 50%;
+    margin-right: -7%;
+  }
+
+  .access .container {
+    padding-top: 10rem;
+  }
+
+  .workflow .container {
+    width: 85%;
+  }
+
+  .workflow .workflow-functions {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .workflow-functions .workflow-tools {
+    width: 33%;
+  }
+
+  .companies .container {
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-footer .container {
+    width: 85%;
+  }
+
+  .main-footer .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    height: 60px;
+    margin: 0;
+  }
+
+  .footer-nav li {
+    margin: 0;
+  }
+
+  .footer-nav a:hover,
+  .copyright a:hover {
+    color: var(--primary-main);
+  }
+
+  .footer-nav .socials {
+    margin: 0;
+  }
+
+  .copyright {
+    margin-top: 4rem;
+  }
 }
